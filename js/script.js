@@ -11,5 +11,8 @@ for(let i=0; i <= max; i++){
 
   const box = document.createElement("div");
   box.className = "box";
+  box.append = (i);
+
+  container.append(box)
 }
 
