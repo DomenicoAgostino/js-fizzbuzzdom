@@ -1,18 +1,38 @@
 console.log("Ciao Mondo");
 
-// CREO CICLO PER I BOX
+
+/* 
+Scrivi un programma che stampi in console i numeri da 1 a 100.
+1. MILESTONE 1
+-Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
+-Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+2. MILESTONE 2
+-Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
+3. MILESTONE 3
+-Applica uno stile differente a seconda del valore dell’indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5. 
+*/
+
 
 const container = document.querySelector(".container");
 
-const max = 1000
-
-for(let i=0; i <= max; i++){
 
 
-  const box = document.createElement("div");
-  box.className = "box";
-  box.append = (i);
+for (let i = 1; i <= 100; i++){
+  const boxColor = document.createElement("div");
+  boxColor.className = "box";
+  boxColor.append(i);
 
-  container.append(box)
+  if(i % 15 == 0){
+    boxColor.classList.add("box-ambo");
+    boxColor.textContent = "fizzBuzz";
+  } else if(i % 3 == 0){
+    boxColor.classList.add("box-mtre");
+    boxColor.textContent = "fizz";
+  } else if(i % 5 == 0){
+    boxColor.classList.add("box-mcinque");
+    boxColor.textContent = "buzz";
+  }
+
+  container.append(boxColor);
 }
 

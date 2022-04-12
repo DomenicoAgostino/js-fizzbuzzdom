@@ -1,12 +1,14 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: yellowgreen;
-  color: white;
+  color: black;
+  text-transform: uppercase;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .container {
@@ -22,8 +24,21 @@ h1 {
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: coral;
+  background-color: burlywood;
   border: 1px solid black;
-  margin: 15p
+  margin: 15px;
 
+}
+
+
+.box-mtre{
+  background-color: coral;
+}
+
+.box-mcinque{
+  background-color: skyblue;
+}
+
+.box-ambo{
+  background-color: lawngreen;
 }
